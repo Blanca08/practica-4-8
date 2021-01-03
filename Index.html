@@ -8,5 +8,19 @@
 </head>
 <body>
     <h1>Práctica 4.8</h1>
+    <script>
+        let numero=[];
+        //let numero = new Array();
+        let suma=0.00;
+        let i=0;
+        let resultado=0.00;
+        do{
+            numero[i]=prompt("Escribe un número, 0 para finalizar:");
+            suma+=Number(numero[i]);
+            i++;            
+        }while (numero[i-1] != 0);        
+        resultado = suma/(i-1);
+        document.write(`<p>la media de ${suma} entre ${i-1} es ${resultado}`);        
+    </script>
 </body>
 </html>
